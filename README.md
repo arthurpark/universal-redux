@@ -16,6 +16,6 @@ Universal redux starter kit that utilizes:
 3. Delete git info for your project, then update `package.json` with your project info
 3. `npm install`
 4. run `npm start`
-5. Visit `localhost:3000` in browser
+5. Visit `localhost:3001` in browser (React Hot Loader enabled)
 6. Start hacking away!
 7. Profit!

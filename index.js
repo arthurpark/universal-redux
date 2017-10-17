@@ -13,7 +13,9 @@ const DEV_SERVER_PORT = APP_PORT + 1;
 
 // This should be hooked before server's are resolved
 hook({
-  generateScopedName: '[name]--[local]--[hash:base64:5]',
+  generateScopedName: ENV === 'development'
+                    ? '[name]--[local]'
+                    : '[name]--[local]--[hash:base64:5]',
   extensions: ['.css', '.scss']
 });
 

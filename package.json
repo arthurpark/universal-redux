@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index",
     "build": "webpack --verbose --progress --colors --display-error-details --config webpack.config.js",
-    "watch": "webpack-dev-server --config webpack.dev.config.js",
+    "watch": "node index",
     "test": "mocha --compilers js:babel-core/register --recursive",
     "test:watch": "npm run test -- --watch"
   },
@@ -51,10 +51,10 @@
     "react-hot-loader": "^3.0.0-beta.2",
     "react-redux": "^4.4.1",
     "react-router": "^2.0.0",
-    "redbox-react": "^1.2.2",
     "redux": "^3.0.6",
+    "redux-logger": "^2.6.1",
+    "redux-thunk": "^2.1.0",
     "webpack": "^1.13.1",
-    "webpack-dev-server": "^1.14.1",
     "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
@@ -72,6 +72,7 @@
     "flow-bin": "^0.24.1",
     "istanbul": "^0.4.1",
     "json-loader": "^0.5.4",
+    "localforage": "^1.4.2",
     "mocha": "^2.4.4",
     "normalize.css": "^4.0.0",
     "postcss": "^5.0.19",
@@ -81,10 +82,10 @@
     "postcss-modules-scope": "^1.0.0",
     "postcss-modules-values": "^1.1.2",
     "precss": "^1.4.0",
-    "react-redux": "^4.0.6",
     "react-transform-catch-errors": "^1.0.1",
-    "react-transform-hmr": "^1.0.4",
     "redbox-react": "^1.2.0",
-    "style-loader": "^0.13.1"
+    "redux-persist": "^3.2.2",
+    "style-loader": "^0.13.1",
+    "webpack-dev-server": "^1.14.1"
   }
 }
